@@ -54,10 +54,12 @@ singlecnts = []
 cnt=0
 freq_trie=trie(1,"root")
 with open(dic["input"], 'r') as file:
-	csv_reader = reader(file)
+	csv_reader = file.read()
+	csv_reader = csv_reader.split('\n')[:-1]
 	for row in csv_reader:
 		if not row:
 			continue
+		row = [str(x) for x in row.split(' ')]
 		row.sort()
 		freq_trie.insertNode(row,1)
 		for i in range(len(row)):

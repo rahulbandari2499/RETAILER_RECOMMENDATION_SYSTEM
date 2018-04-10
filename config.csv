@@ -1,4 +1,4 @@
-input,input2.csv
+input,./IBMGenerator-master/T5I7D5.data
 output,output2.csv
 support,0.2
 confidence,0.8
