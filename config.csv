@@ -1,5 +1,5 @@
-input,./IBMGenerator-master/T5I7D5.data
+input,./IBMGenerator-master/D100KT10I1k.data
 output,output2.csv
-support,0.2
+support,0.001
 confidence,0.8
 flag,1
